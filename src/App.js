@@ -1,8 +1,17 @@
+import React, { useEffect } from 'react';
 import Footer from "./includes/footer";
 import Form from "./includes/form";
 import Header from "./includes/header";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
+
     return (
         <>
             <Header />
@@ -16,7 +25,7 @@ function App() {
 
             <main id="main">
 
-                <section id="about" className="about">
+                <section id="about" className="about" data-aos="fade-down-right">
                     <div className="container justify-content-around">
                         <div className="section-title justify-content-between">
                             <h2>NOSOTROS</h2>
@@ -36,21 +45,21 @@ function App() {
                         </div>
 
                         <div className="row">
-                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
+                            <div className="col-lg-4 col-md-6 d-lg-flex align-items-stretch" data-aos="fade-right">
                                 <div className="icon-box">
                                     <div className="icon"><i className="fas fa-bolt"></i></div>
                                     <h4><a href="#services">Instalaciones de baja y alta tensión</a></h4>
                                 </div>
                             </div>
 
-                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                            <div className="col-lg-4 col-md-6 d-lg-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up">
                                 <div className="icon-box">
                                     <div className="icon"><i className="fas fa-charging-station"></i></div>
                                     <h4><a href="#services">Montajes de transformadores</a></h4>
                                 </div>
                             </div>
 
-                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                            <div className="col-lg-4 col-md-6 d-lg-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-left">
                                 <div className="icon-box">
                                     <div className="icon"><i className="far fa-lightbulb"></i></div>
                                     <h4><a href="#services">Columnas de cementos e iluminacion</a></h4>
@@ -69,7 +78,7 @@ function App() {
 
                     <div className="container-fluid">
                         <div className="row g-0">
-                            <div className="col-lg-3 col-md-4">
+                            <div className="col-lg-3 col-md-4" data-aos="fade-right">
                                 <div className="gallery-item">
                                     <a href={process.env.PUBLIC_URL + '/assets/img/gallery/gallery-1.jpeg'} className="galelry-lightbox">
                                         <img src={process.env.PUBLIC_URL + '/assets/img/gallery/gallery-1.jpeg'} alt="" className="img-fluid" />
@@ -77,35 +86,35 @@ function App() {
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-4">
+                            <div className="col-lg-3 col-md-4" data-aos="fade-right">
                                 <div className="gallery-item">
                                     <a href={process.env.PUBLIC_URL +"assets/img/gallery/gallery-2.jpeg"} className="galelry-lightbox">
                                         <img src={process.env.PUBLIC_URL +"assets/img/gallery/gallery-2.jpeg"} alt="" className="img-fluid" />
                                     </a>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-4">
+                            <div className="col-lg-3 col-md-4" data-aos="fade-right">
                                 <div className="gallery-item">
                                     <a href={process.env.PUBLIC_URL +"assets/img/gallery/gallery-5.jpeg"} className="galelry-lightbox">
                                         <img src={process.env.PUBLIC_URL +"assets/img/gallery/gallery-5.jpeg"} alt="" className="img-fluid" />
                                     </a>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-4">
+                            <div className="col-lg-3 col-md-4" data-aos="fade-right">
                                 <div className="gallery-item">
                                     <a href={process.env.PUBLIC_URL +"assets/img/gallery/gallery-6.jpeg"} className="galelry-lightbox">
                                         <img src={process.env.PUBLIC_URL +"assets/img/gallery/gallery-6.jpeg"} alt="" className="img-fluid" />
                                     </a>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-4">
+                            <div className="col-lg-3 col-md-4" data-aos="fade-left">
                                 <div className="gallery-item">
                                     <a href={process.env.PUBLIC_URL +"assets/img/gallery/gallery-7.jpeg"} className="galelry-lightbox">
                                         <img src={process.env.PUBLIC_URL +"assets/img/gallery/gallery-7.jpeg"} alt="" className="img-fluid" />
                                     </a>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-4">
+                            <div className="col-lg-3 col-md-4" data-aos="fade-left">
                                 <div className="gallery-item">
                                     <a href={process.env.PUBLIC_URL +"assets/img/gallery/gallery-9.jpeg"} className="galelry-lightbox">
                                         <img src={process.env.PUBLIC_URL +"assets/img/gallery/gallery-9.jpeg"} alt="" className="img-fluid" />
@@ -113,14 +122,14 @@ function App() {
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-md-4">
+                            <div className="col-lg-3 col-md-4" data-aos="fade-left">
                                 <div className="gallery-item">
                                     <a href={process.env.PUBLIC_URL +"assets/img/gallery/gallery-10.jpeg"} className="galelry-lightbox">
                                         <img src={process.env.PUBLIC_URL +"assets/img/gallery/gallery-10.jpeg"} alt="" className="img-fluid" />
                                     </a>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-md-4">
+                            <div className="col-lg-3 col-md-4" data-aos="fade-left">
                                 <div className="gallery-item">
                                     <a href={process.env.PUBLIC_URL +"assets/img/gallery/gallery-11.jpeg"} className="galelry-lightbox">
                                         <img src={process.env.PUBLIC_URL +"assets/img/gallery/gallery-11.jpeg"} alt="" className="img-fluid" />

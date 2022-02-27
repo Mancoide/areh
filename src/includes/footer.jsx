@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Footer ()
 {
     return(
@@ -22,7 +20,7 @@ function Footer ()
                                     <p>emprendimientoroa1@yahoo.com</p>
                                 </div>
 
-                                <div className="phone">
+                                <div className="phone mb-5">
                                     <i className="bi bi-phone"></i>
                                     <h4>Tel.:</h4>
                                     <p>+595 981 800-978</p>
@@ -30,7 +28,9 @@ function Footer ()
                             </div>
                         </div>
 
-
+                        <div className="col-lg-6 col-md-6">
+                            <iframe style={{ border: 0 }} width="100%" height="350"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1804.0154968935326!2d-57.49874263243482!3d-25.269542804179462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945daf8667ca4025%3A0xce05da935369e176!2sGral.%20D%C3%ADaz%20%26%20Cnel.%20Oviedo%2C%20Luque!5e0!3m2!1ses-419!2spy!4v1645839126117!5m2!1ses-419!2spy" frameBorder="0" allowFullScreen loading="lazy" />
+                        </div>
                     </div>
                 </div>
             </div>
