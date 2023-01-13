@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 class Form extends Component {
     

@@ -18,7 +18,7 @@ function App() {
             <section id="hero" className="d-flex align-items-center">
                 <div className="container">
                     <h1>
-                        <img src={process.env.PUBLIC_URL + '/assets/img/logo1.svg'} className="img-fluid" />
+                        <img src={process.env.PUBLIC_URL + '/assets/img/logo1.svg'} className="img-fluid" alt="..." />
                     </h1>       
                 </div>
             </section>
